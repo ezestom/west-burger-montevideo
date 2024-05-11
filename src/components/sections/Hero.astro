@@ -1,0 +1,23 @@
+---
+import Header from "../Header.astro";
+import ScrollOver from "../ScrollOver.astro";
+import hero from "../../img/burger_hero.jpg";
+import { Image } from "astro:assets";
+import Container from "../Container.astro";
+import Slider from "../Slider.astro";
+---
+
+<section class="h-screen relative overflow-hidden">
+	<ScrollOver text="Hoy envío gratis a todas las zonas" />
+	<Header />
+	<Container>
+		<Image
+			src={hero}
+			alt="hero burger image "
+			class="w-full h-[72vh] object-cover object-center shadow-md"
+		/>
+	</Container>
+	<div class="absolute bottom-0 left-0">
+		<Slider text="West" text2="Hamburgueseria" text3=".com" />
+	</div>
+</section>

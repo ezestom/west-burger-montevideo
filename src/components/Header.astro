@@ -1,0 +1,50 @@
+---
+import logo from "../img/logo.png";
+import Container from "./Container.astro";
+---
+
+<Container>
+	<header class="flex items-center justify-between py-1" transition:persist>
+		<a href="/" class="flex items-center gap-1">
+			<img src={logo.src} class="max-w-20" alt="logo image" />
+			<h1
+				class="text-base md:text-5xl uppercase tracking-tighter font-black hover:scale-105 transition">
+				West
+			</h1>
+		</a>
+		<nav class="flex items-center gap-2 md:gap-10">
+			<a
+				href="/about-us"
+				class="uppercase hover:scale-105 transition tracking-tighter font-bold text-sm md:text-xl"
+				>Sobre West</a
+			>
+			<a
+				href="/made-your-order"
+				class="shadow__btn text-nowrap px-2 py-4 text-sm md:text-xl">
+				Hacé tu pedido!</a
+			>
+		</nav>
+	</header>
+</Container>
+
+<style>
+	/* btn style */
+	.shadow__btn {
+		border: none;
+		color: #fff;
+		letter-spacing: 2px;
+		font-weight: 700;
+		transition: 0.5s;
+		transition-property: box-shadow;
+		background: red;
+		box-shadow: 0 0 5px red;
+	}
+
+	.shadow__btn:hover {
+		box-shadow:
+			0 0 5px red,
+			0 0 10px red,
+			0 0 15px red,
+			0 0 25px red;
+	}
+</style>

@@ -1,0 +1,37 @@
+---
+import Container from "../Container.astro";
+import { Image } from "astro:assets";
+import image1 from "../../img/picture_section2_1.jpg";
+import image2 from "../../img/picture_section2_2.jpg";
+import image3 from "../../img/picture_section2_3.webp";
+import image4 from "../../img/picture_section2_4.jpg";
+---
+
+<section class="h-full">
+	<Container>
+		<div class="my-20">
+			<figure class="grid grid-cols-2 gap-5">
+				<Image
+					class="object-cover h-[250px] md:h-[75vh] w-full"
+					src={image1}
+					alt="Hero Image"
+				/>
+				<Image
+					class="object-cover h-[250px] md:h-[75vh] w-full"
+					src={image2}
+					alt="Hero Image"
+				/>
+				<Image
+					class="object-cover h-[250px] md:h-[75vh] w-full"
+					src={image3}
+					alt="Hero Image"
+				/>
+				<Image
+					class="object-cover h-[250px] md:h-[75vh] w-full"
+					src={image4}
+					alt="Hero Image"
+				/>
+			</figure>
+		</div>
+	</Container>
+</section>

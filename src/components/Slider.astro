@@ -1,0 +1,108 @@
+---
+import sushi2 from "../icons/sushi2.svg";
+
+interface Slider {
+	text: string;
+	text2: string;
+	style: string;
+}
+const { text, text2, text3 } = Astro.props;
+---
+
+<article
+	class=" text-3xl md:text-6xl  font-black py-10 md:py-0 overflow-hidden"
+	id="text2">
+	<div class="slider-container gap-2 ">
+		<p class="tracking uppercase flex text-nowrap ml-4">
+			{text}
+			<span>
+				{text2}
+			</span>
+			{text3}
+		</p>
+		<p class="tracking uppercase flex text-nowrap ml-4">
+			{text}
+			<span>
+				{text2}
+			</span>
+			{text3}
+		</p>
+		<p class="tracking uppercase flex text-nowrap ml-4">
+			{text}
+			<span>
+				{text2}
+			</span>
+			{text3}
+		</p>
+		<p class="tracking uppercase flex text-nowrap ml-4">
+			{text}
+			<span>
+				{text2}
+			</span>
+			{text3}
+		</p>
+		<p class="tracking uppercase flex text-nowrap ml-4">
+			{text}
+			<span>
+				{text2}
+			</span>
+			{text3}
+		</p>
+		<p class="tracking uppercase flex text-nowrap ml-4">
+			{text}
+			<span>
+				{text2}
+			</span>
+			{text3}
+		</p>
+		<p class="tracking uppercase flex text-nowrap ml-4">
+			{text}
+			<span>
+				{text2}
+			</span>
+			{text3}
+		</p>
+		<p class="tracking uppercase flex text-nowrap ml-4">
+			{text}
+			<span>
+				{text2}
+			</span>
+			{text3}
+		</p>
+	</div>
+</article>
+
+<style>
+	article {
+		color: red;
+	}
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		animation: slide 800s linear infinite;
+	}
+	span {
+		/* add text clip */
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-image: linear-gradient(
+			90deg,
+			#f12711,
+			#f5af19,
+			#f5af19,
+			#f12711
+		);
+		background-size: 200% 100%;
+	}
+
+	@keyframes slide {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-200%);
+		}
+	}
+</style>

@@ -1,0 +1,45 @@
+---
+import Header from "../components/Header.astro";
+import ScrollOver from "../components/ScrollOver.astro";
+import hero from "../img/the-smash-burger.webp";
+import { Image } from "astro:assets";
+import Container from "../components/Container.astro";
+import Slider from "../components/Slider.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/sections/Footer.astro";
+---
+
+<Layout title="Hacé tu pedido!">
+	<section class="md:h-screen relative overflow-hidden">
+		<ScrollOver text="Hoy envío gratis a todas las zonas" />
+		<Header />
+		<Container>
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 h-full m-auto gap-5 py-5">
+				<div class="flex flex-col gap-5 md:gap-10 shadow-md py-10 md:py-20 px-5 md:px-10">
+					<h1
+						class="text-4xl md:text-[3vw] font-bold text-center md:text-left">
+						Quienes somos?
+					</h1>
+					<p class="text-center md:text-left md:text-2xl">
+						Somos una hamburguesería que se dedica a la elaboración
+						de hamburguesas de calidad, con ingredientes frescos y
+						de primera calidad. Nuestro objetivo es que disfrutes de
+						una experiencia única y deliciosa. ¡Hacé tu pedido y
+						disfrutá de nuestras hamburguesas!
+					</p>
+				</div>
+
+				<Image
+					src={hero}
+					alt="hero burger image "
+					class="w-full h-[72vh] object-cover object-center shadow-md hidden md:block"
+				/>
+			</div>
+		</Container>
+		<div class="absolute bottom-0 left-0 hidden md:block">
+			<Slider text="West" text2="Hamburgueseria" text3=".com" />
+		</div>
+	</section>
+	<Footer />
+</Layout>

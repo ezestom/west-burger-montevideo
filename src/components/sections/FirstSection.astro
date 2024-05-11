@@ -1,0 +1,31 @@
+---
+import Container from "../Container.astro";
+import { Image } from "astro:assets";
+import burger1 from "../../img/burger_1.jpg";
+---
+
+<section class="h-full">
+	<Container>
+		<h2 class="font-black md:text-2xl uppercase my-20 flex items-center justify-center text-center">
+			🔥 Nuestros combos Recomendados 🔥
+		</h2>
+		<aside class="grid grid-cols-2 md:grid-cols-4  gap-5 wrap">
+			<div class="text-xl font-semibold ">
+				<Image class="aspect-square object-cover" src={burger1} alt="Combo 1" />
+				<p class="pt-4">Bacon Burger + Frites</p>
+			</div>
+			<div class="text-xl font-semibold ">
+				<Image class="aspect-square object-cover" src={burger1} alt="Combo 2" />
+				<p class="pt-4">Bacon Burger + Frites</p>
+			</div>
+			<div class="text-xl font-semibold ">
+				<Image class="aspect-square object-cover" src={burger1} alt="Combo 3" />
+				<p class="pt-4">Bacon Burger + Frites</p>
+			</div>
+			<div class="text-xl font-semibold ">
+				<Image class="aspect-square object-cover" src={burger1} alt="Combo 4" />
+				<p class="pt-4">Bacon Burger + Frites</p>
+			</div>
+		</aside>
+	</Container>
+</section>

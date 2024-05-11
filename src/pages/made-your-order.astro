@@ -1,0 +1,33 @@
+---
+import Header from "../components/Header.astro";
+import ScrollOver from "../components/ScrollOver.astro";
+import hero from "../img/make-your-order.webp";
+import { Image } from "astro:assets";
+import Container from "../components/Container.astro";
+import Slider from "../components/Slider.astro";
+import Layout from "../layouts/Layout.astro";
+import MapComp from "../components/Map/MapComp.jsx";
+import Footer from "../components/sections/Footer.astro";
+---
+
+<Layout title="Hacé tu pedido!">
+	<section class="md:h-screen relative overflow-hidden">
+		<ScrollOver text="Hoy envío gratis a todas las zonas" />
+		<Header />
+		<Container>
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 h-full m-auto gap-5 py-2">
+				<MapComp client:load />
+				<Image
+					src={hero}
+					alt="hero burger image "
+					class="w-full h-[72vh] object-cover object-center shadow-md hidden md:block"
+				/>
+			</div>
+		</Container>
+		<div class="absolute bottom-0 left-0 hidden md:block">
+			<Slider text="West" text2="Hamburgueseria" text3=".com" />
+		</div>
+	</section>
+	<Footer />
+</Layout>

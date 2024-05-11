@@ -1,0 +1,89 @@
+---
+interface paragraph {
+	text: string;
+}
+const { text } = Astro.props;
+---
+
+<article class="bg-red-600 text-white uppercase overflow-hidden w-full">
+	<div>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+		<span>-</span>
+		<p>{text}</p>
+	</div>
+</article>
+
+<style>
+	/* article {
+		box-shadow: 0 0 15px red;
+	} */
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		animation: slide 750s linear infinite;
+	}
+	p {
+		text-wrap: nowrap;
+	}
+	span {
+		margin: 0 0.5rem;
+	}
+	@keyframes slide {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-100%);
+		}
+	}
+</style>

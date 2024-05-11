@@ -1,0 +1,18 @@
+---
+import Swiper from "../components/Swiper/Swiper.jsx";
+import Container from "./Container.astro";
+---
+
+<section class="py-10">
+	<Container>
+		<h2
+			class="font-black md:text-2xl uppercase flex items-center justify-center text-center">
+			Seguinos en
+		</h2>
+		<p
+			class="font-normal md:text-2xl  flex items-center justify-center text-center">
+			@westmontevideo
+		</p>
+		<Swiper client:visible />
+	</Container>
+</section>

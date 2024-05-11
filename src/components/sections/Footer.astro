@@ -1,0 +1,78 @@
+---
+import logo from "../../img/logo.png";
+import www from "../../icons/www.svg";
+---
+
+<footer class="bg-black">
+	<div
+		class="py-10 md:py-20 gap-5 md:gap-10 flex flex-col items-center justify-center">
+		<a href="#top" class="flex items-center gap-1">
+			<img src={logo.src} class="max-w-20" alt="logo image" />
+			<h1
+				class="text-xl text-white md:text-5xl uppercase tracking-tighter font-black hover:scale-105 transition">
+				West
+			</h1>
+		</a>
+		<p
+			class="text-white font-black md:text-2xl uppercase flex items-center justify-center text-center px-10">
+			No dejes de probar nuestros combos 🍔🍟🥤
+		</p>
+	</div>
+	<hr class="border-gray-200 sm:mx-auto" />
+	<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+		<div class="grid grid-cols-1 md:grid-cols-3 w-full">
+			<div>
+				<h2
+					class="m-2 md:m-4 md:text-center md:text-xl font-bold text-white uppercase">
+					Tienda
+				</h2>
+				<ul class="text-sm md:text-base text-white md:text-center font-medium">
+					<li class="m-2">Guayabos 1865 bis/</li>
+					<li class="m-2">Delivery todos los días de 20:00-00:00</li>
+					<l class="m-2"> Take away todos los días 13:00-00:00 </l>
+				</ul>
+			</div>
+			<div>
+				<h2
+					class="m-2 md:m-4 md:text-center md:text-xl font-bold text-white uppercase">
+					Nosotros
+				</h2>
+				<ul class="text-sm md:text-base text-white md:text-center font-medium">
+					<li class="m-2">
+						<a
+							href="https://github.com/themesberg/flowbite"
+							class="hover:underline">Sobre nosotros</a
+						>
+					</li>
+					<li class="m-2">
+						<a href="tel:+598 99 999 999" class="hover:underline"
+							>Contactános
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2
+					class="m-2 md:m-4 md:text-center md:text-xl font-bold text-white uppercase">
+					Seguinos en
+				</h2>
+				<ul class="text-sm md:text-base text-white md:text-center font-medium">
+					<li class="m-2">
+						<a
+							href="https://www.instagram.com/"
+							class="hover:underline">Instagram</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="bg-red-600 flex items-center justify-between py-2 px-8">
+		<p class="text-white text-sm">
+			© 2024 West. Todos los derechos reservados.
+		</p>
+		<p>
+			<img src={www.src} alt="www icon" />
+		</p>
+	</div>
+</footer>
