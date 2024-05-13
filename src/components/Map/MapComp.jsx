@@ -84,7 +84,9 @@ const MapComp = () => {
 					</div>
 				</div>
 				{!isLoaded ? (
-					<div className="spinner"></div>
+					<div className="spinner-container">
+						<span className="spinner"></span>
+					</div>
 				) : (
 					<div className="map-container h-full min-h-[375px]">
 						<GoogleMap

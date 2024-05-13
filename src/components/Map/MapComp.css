@@ -1,9 +1,16 @@
+.spinner-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
 .spinner {
-	border: 4px solid rgba(0, 0, 0, 0.1);
+	border: 1rem solid rgba(0, 0, 0, 0.1);
 	border-left-color: red;
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 200px;
+	height: 200px;
 	animation: spin 1s linear infinite;
 }
 .sucursal-container {
@@ -51,17 +58,6 @@ select {
 	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
 }
 
-.loader {
-	border: 4px solid #f3f3f3;
-	/* Light grey */
-	border-top: 4px solid red;
-	/* Blue */
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-	animation: spin 1s linear infinite;
-	margin: auto;
-}
 
 @keyframes spin {
 	0% {
