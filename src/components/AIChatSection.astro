@@ -1,0 +1,53 @@
+---
+// Este es un ejemplo de cómo integrar el chat de IA en tu SecondSection
+// Puedes copiar este código o crear tu propia implementación
+import AIChat from "./AIChat/AIChat";
+---
+
+<section class="ai-chat-section">
+	<div class="container">
+		<div class="ai-chat-wrapper">
+			<h2>Chatea con nuestra IA</h2>
+			<p>Pregunta lo que quieras, nuestra IA está aquí para ayudarte</p>
+			<AIChat client:load />
+		</div>
+	</div>
+</section>
+
+<style>
+	.ai-chat-section {
+		padding: 4rem 2rem;
+		background: #f8f9fa;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.ai-chat-wrapper {
+		text-align: center;
+	}
+
+	.ai-chat-wrapper h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: #333;
+	}
+
+	.ai-chat-wrapper p {
+		font-size: 1.2rem;
+		color: #666;
+		margin-bottom: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		.ai-chat-section {
+			padding: 2rem 1rem;
+		}
+
+		.ai-chat-wrapper h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
